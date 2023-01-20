@@ -16,6 +16,7 @@ export const userAtom = atom({
     firstName: null,
     lastName: null,
     image: null,
+    email: null,
     token: localStorage.getItem("testToken"),
   },
   effects: [localStorageEffect("testToken")],
