@@ -164,6 +164,13 @@ body {
   font-weight: bold;
   margin-bottom: 11px;
 }
+.user-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid lightseagreen;
+  margin-top: 50px;
+}
 .input-login {
   width: 195px;
   height: 45px;
