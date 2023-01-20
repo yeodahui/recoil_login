@@ -1,6 +1,15 @@
+import { useNavigate } from "react-router-dom";
+import { useResetRecoilState } from "recoil";
+import { userAtom } from "../atoms/AuthAtom";
+
 function Logout() {
+  const navigate = useNavigate();
+  const resetAtom = useResetRecoilState(userAtom);
+
   function logOut() {
-    console.log("로그아웃 되었습니다");
+    localStorage.removeItem("testToken");
+    resetAtom();
+    navigate("/");
   }
 
   return (
